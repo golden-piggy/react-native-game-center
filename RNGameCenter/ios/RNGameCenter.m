@@ -658,7 +658,6 @@ RCT_EXPORT_METHOD(submitAchievementScore:(NSDictionary *)options
   else achievementId=_achievementIdentifier;
 //
     if(!achievementId)return reject(@"Error",@"No Game Center `achievementIdentifier` passed and no default set", nil);
-    return;
   BOOL showsCompletionBanner=YES;
   if(options[@"hideCompletionBanner"])showsCompletionBanner=NO;
     NSLog(@"showsCompletionBanner %d",showsCompletionBanner);
