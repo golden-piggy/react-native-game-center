@@ -14,7 +14,9 @@ init:(options)=> {
 return  NativeModules.RNGameCenter.init(options)
 },
 
-
+userLogged:()=>{
+  return NativeModules.RNGameCenter.userLogged()
+},
 getPlayer:()=>{
 return  NativeModules.RNGameCenter.getPlayer()
 },

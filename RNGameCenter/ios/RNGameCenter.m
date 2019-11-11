@@ -98,6 +98,10 @@ RCT_EXPORT_METHOD(init:(NSDictionary *)options
   };
 };
 
+RCT_EXPORT_METHOD(userLogged:(RCTPromiseResolveBlock)resolve
+                  rejecter:(RCTPromiseRejectBlock)reject){
+  resolve(_isGameCenterAvailable!=NO?@true:@false);
+}
 
 
 
